@@ -80,14 +80,6 @@
      <lastmod>2021-04-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://github.com/eRegister/docs/ereg/deployingMappings/</loc>
-     <lastmod>2021-04-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://github.com/eRegister/docs/ereg/bahmniconfigs092/</loc>
-     <lastmod>2021-04-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://github.com/eRegister/docs/ereg/bahmniapps/</loc>
      <lastmod>2021-04-28</lastmod>
      <changefreq>daily</changefreq>
@@ -100,7 +92,7 @@
      <lastmod>2021-04-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://github.com/eRegister/docs/ereg/deployingMappings092/</loc>
+     <loc>https://github.com/eRegister/docs/ereg/DeployingMappings/</loc>
      <lastmod>2021-04-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -145,6 +137,18 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://github.com/eRegister/docs/covid/How-To-Prepare-Docker-Training-Instance/</loc>
+     <lastmod>2021-04-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://github.com/eRegister/docs/odoo/Overview/</loc>
+     <lastmod>2021-04-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://github.com/eRegister/docs/odoo/Dispensary/</loc>
+     <lastmod>2021-04-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://github.com/eRegister/docs/odoo/Accounting/</loc>
      <lastmod>2021-04-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>

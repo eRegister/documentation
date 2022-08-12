@@ -146,11 +146,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/eRegister/docs/ereg/TB/</loc>
-         <lastmod>2022-08-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://github.com/eRegister/docs/ereg/bahmniaddons/</loc>
          <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
@@ -197,6 +192,11 @@
     </url>
     <url>
          <loc>https://github.com/eRegister/docs/ereg/reppull/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/eRegister/docs/ereg/u-intro/</loc>
          <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>

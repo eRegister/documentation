@@ -1521,6 +1521,10 @@
 <h6 id="bahmni">Bahmni</h6>
 <ul>
 <li><em>TB_Intake report(list)</em> - correction to pull correction patients</li>
+<li><em>ART-001 | Current on ART Detailed (List)</em> - the report to report clients seen and missed by the end of the reporting period as missed</li>
+<li><em>ART-002 | Current on ART Detailed (Pivot)</em> - the report to report clients seen and missed by the end of the reporting period as missed</li>
+<li><em>ART-053 | TX_CURR (Pivot)</em> - the report to report clients seen and missed by the end of the reporting period as missed</li>
+<li><em>ART-054 | TX_CURR (List)</em> - the report to report clients seen and missed by the end of the reporting period as missed</li>
 <li><em>ART-077 | PEADS Aging Out Analysis (Client Outcomes)</em> - changed to track the latest cohort which is Q2 2021</li>
 <li><em>ART-078 | PEADS Aging Out Analysis (Client Appointments)</em> - changed to track the latest cohort which is Q2 2021</li>
 <li><em>ART-059 | TX_RTT (List)</em> - Disaggregations changed from IIT&gt; 3months to IIT3-5months and IIT6+months</li>
@@ -1532,6 +1536,16 @@
 <li><em>TB-010 | New and Relapse Enrolled on TB (List)</em> - Added TB history, Key populations, HIV Status, Active and Defaulted Clients</li>
 <li><em>TB-011 | DSD TB_ART</em> - Added TB history, Key populations, HIV Status, Active and Defaulted Clients</li>
 <li><em>ART-003 | Missed Appointments Status Report (List)</em> - Arranged clients with appointment missed</li>
+<li><em>TB-022 | TB Drug Resistant (list)</em> - New Report</li>
+<li><em>TB-003 | TB Notification (List)</em> - New Report </li>
+</ul>
+</li>
+<li>
+<h6 id="openmrs">Openmrs</h6>
+<ul>
+<li><em>PIR-17 Tx_CURR Retention Report Mapping 2022</em> - Maps part of PIR-17 Tx_CURR Retention Report to Txcurr Retention and Attrition Report in DHIS2(TxRTT Section)</li>
+<li><em>PIR-17 Tx_CURR TXML_2022</em> - Maps PIR-17 Tx_CURR TXML Report to Txcurr Retention and Attrition Report in DHIS2(TxML Section)</li>
+<li><em>2020_ADULT ARV REGIMEN Mapping</em> - now maps to Adult Regimen 1f (a)TDF 3TC /EFV (400mg) other months which was previously blank</li>
 </ul>
 </li>
 </ul>
@@ -1541,9 +1555,30 @@
 <ul>
 <li>New Prep Follow-Up Form</li>
 <li>New Prep Intake Form</li>
+<li>Made Under 5 Base Doses Multi-select</li>
+<li>Added a Reports name filter in Bahmni-Reports </li>
+<li>Added 'Weeks of current gestation by LMP method' to Obstetric History on ANC Program Form.</li>
+<li>Auto Calculate Gestational Age from LNMP on The ANC Program Form</li>
+<li>Visits for other services e.g., FP, Cervical Cancer Screening, Enhanced Adherence Counseling and Under5</li>
 </ul>
 </li>
 </ul>
+<hr />
+<p><strong>Note</strong></p>
+<p><strong>Do the following to deploy the new visits on your server:</strong></p>
+<ul>
+<li>Pull or Clone the new bahmni_docker</li>
+<li>
+<p>Restore the following files in to the database (emr):</p>
+<p>/bahmni_docker/misc/vist_types.sql</p>
+<p>/bahmni_docker/misc/new_vists_global_properties.sql</p>
+</li>
+<li>
+<p>Pull the new bahmni_configs</p>
+</li>
+<li>Rebuild the search index</li>
+</ul>
+<hr />
 <h2 id="-release-notes-august-2022">- <em>Release Notes August 2022</em></h2>
 <ul>
 <li>
@@ -1586,7 +1621,7 @@
 </ul>
 </li>
 <li>
-<h6 id="openmrs">Openmrs</h6>
+<h6 id="openmrs_1">Openmrs</h6>
 <ul>
 <li><em>Created new children regimen reports that categorize children by weight:</em><ul>
 <li>Children ARV Regimen_1stLine_2022</li>
@@ -1678,7 +1713,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 13, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 9, 2022</span>
       
     
   </small>

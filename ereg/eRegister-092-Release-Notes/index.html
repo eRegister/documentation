@@ -1576,13 +1576,36 @@
 </ul>
 </div>
 <h2 id="092"><a href="https://bahmni.atlassian.net/wiki/spaces/BAH/pages/20185103/Release+Notes">0.92</a></h2>
-<h2 id="-release-notes-november-2022">- <em>Release Notes November 2022</em></h2>
+<h2 id="-release-notes-december-2022">- <em>Release Notes December 2022</em></h2>
 <ul>
 <li>
 <h5 id="reports">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni">Bahmni</h6>
+<ul>
+<li><em>TB-025 | TB Data Quality Assessment Tool</em> - new report </li>
+<li><em>PHARM-004 | Registered Clients Prescribed and Dispensed (List)</em> - New report</li>
+<li><em>PHARM-005 | Registered Clients Prescribed and Dispensed (Pivot)</em> - New report</li>
+<li><em>PHARM-001 | Pharmacy ARV Regimen</em> - Displays details and status of Regimens</li>
+</ul>
+</li>
+<li>
+<h6 id="openmrs">Openmrs</h6>
+<ul>
+<li>A new serialized object for the fix of pitc and citc reports in openmrs (They were not picking some clients and were duplicating others)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="-release-notes-november-2022">- <em>Release Notes November 2022</em></h2>
+<ul>
+<li>
+<h5 id="reports_1">Reports</h5>
+<ul>
+<li>
+<h6 id="bahmni_1">Bahmni</h6>
 <ul>
 <li><em>ART-001 | Current on ART Detailed (List)</em> - Newly added ECID Identifier results in Zeros under MMD - Solved</li>
 <li><em>ART-001 | Current on ART Detailed (List)</em> - Clients who transferred out and came back under clients_missed_28days</li>
@@ -1608,10 +1631,10 @@
 <h2 id="-release-notes-october-2022">- <em>Release Notes October 2022</em></h2>
 <ul>
 <li>
-<h5 id="reports_1">Reports</h5>
+<h5 id="reports_2">Reports</h5>
 <ul>
 <li>
-<h6 id="bahmni_1">Bahmni</h6>
+<h6 id="bahmni_2">Bahmni</h6>
 <ul>
 <li><em>ART-026 | Ante Natal Care (ANC)</em> - The report now relies on the start and end dates picked by the user, instead it picked the month and year of the end Date</li>
 <li><em>ART-026 | Ante Natal Care (ANC)</em> - The gap between 2nd and 3rd trimester (25 weeks) is now included</li>
@@ -1639,10 +1662,10 @@
 <h2 id="-release-notes-september-2022">- <em>Release Notes September 2022</em></h2>
 <ul>
 <li>
-<h5 id="reports_2">Reports</h5>
+<h5 id="reports_3">Reports</h5>
 <ul>
 <li>
-<h6 id="bahmni_2">Bahmni</h6>
+<h6 id="bahmni_3">Bahmni</h6>
 <ul>
 <li><em>TB_Intake report(list)</em> - correction to pull correction patients</li>
 <li><em>ART-001 | Current on ART Detailed (List)</em> - the report to report clients seen and missed by the end of the reporting period as missed</li>
@@ -1665,7 +1688,7 @@
 </ul>
 </li>
 <li>
-<h6 id="openmrs">Openmrs</h6>
+<h6 id="openmrs_1">Openmrs</h6>
 <ul>
 <li><em>PIR-17 Tx_CURR Retention Report Mapping 2022</em> - Maps part of PIR-17 Tx_CURR Retention Report to Txcurr Retention and Attrition Report in DHIS2(TxRTT Section)</li>
 <li><em>PIR-17 Tx_CURR TXML_2022</em> - Maps PIR-17 Tx_CURR TXML Report to Txcurr Retention and Attrition Report in DHIS2(TxML Section)</li>
@@ -1706,10 +1729,10 @@
 <h2 id="-release-notes-august-2022">- <em>Release Notes August 2022</em></h2>
 <ul>
 <li>
-<h5 id="reports_3">Reports</h5>
+<h5 id="reports_4">Reports</h5>
 <ul>
 <li>
-<h6 id="bahmni_3">Bahmni</h6>
+<h6 id="bahmni_4">Bahmni</h6>
 <ul>
 <li><em>ART-022 | Data Quality Assessment tool</em> - was displaying a blank page</li>
 <li><em>ART-021 | ART Client Without Intakes (List)</em> - Added more columns(ArtNumber,age,gender,location)</li>
@@ -1733,10 +1756,10 @@
 <h2 id="-release-notes-july-2022">- <em>Release Notes July 2022</em></h2>
 <ul>
 <li>
-<h5 id="reports_4">Reports</h5>
+<h5 id="reports_5">Reports</h5>
 <ul>
 <li>
-<h6 id="bahmni_4">Bahmni</h6>
+<h6 id="bahmni_5">Bahmni</h6>
 <ul>
 <li>Reporting age groups have been modified to include the new age groups being 50-54, 55-59,60-64,65+.</li>
 <li><em>ART-022 | Data Quality Assessment tool</em> -  DQA Report had a bug after modification to include defaulted and lost to follow-up clients [Bug Fixed].</li>
@@ -1745,7 +1768,7 @@
 </ul>
 </li>
 <li>
-<h6 id="openmrs_1">Openmrs</h6>
+<h6 id="openmrs_2">Openmrs</h6>
 <ul>
 <li><em>Created new children regimen reports that categorize children by weight:</em><ul>
 <li>Children ARV Regimen_1stLine_2022</li>
@@ -1792,7 +1815,7 @@
 </ul>
 </li>
 <li>
-<h5 id="reports_5">Reports</h5>
+<h5 id="reports_6">Reports</h5>
 <ul>
 <li>Ported all Bahmni 0.90 reports to Bahmni 0.92</li>
 <li>Developed Informed Push Tool reports</li>

@@ -1620,8 +1620,227 @@
 <li>Please report issues here: <a href="https://github.com/eRegister/bahmni_docker/issues">https://github.com/eRegister/bahmni_docker/issues</a></li>
 </ul>
 </div>
-<h3 id="release-notes-april-2022"><strong>Release Notes April 2022</strong></h3>
+<h3 id="release-notes-july-2023"><strong>Release Notes July 2023</strong></h3>
+<h4 id="tb">TB</h4>
+<h5 id="-changes-made-in-the-tb-intake-and-tb-followup-forms">- Changes made in the TB intake and TB followup forms</h5>
+<ul>
+<li>CD4 count, Date of CD4 count and HIV test done were added.</li>
+<li>Prevention of OIs was changed to appear below HIV management instead of above</li>
+<li>Added other to indication for starting PrEP</li>
+</ul>
+<h4 id="_1"></h4>
+<h5 id="-added-vili-test-to-type-of-screening-offered-field-in-the-cervical-cancer-screening-register">- Added VILI test to "Type of screening offered" field in the cervical cancer screening register</h5>
+<h5 id="-added-lab-test-number-to-the-following-tb-lab-tests">- Added lab test number to the following TB lab tests</h5>
+<ul>
+<li>Genexpert</li>
+<li>Line Probe Assay (LPA)</li>
+<li>Culture and DST</li>
+<li>X-ray and other tests</li>
+<li>Added lab test number to the following TB lab tests</li>
+</ul>
+<h4 id="pharmacy">Pharmacy</h4>
+<ul>
+<li>Added DTG 10 mg, DTG 50mg, Isoniazid/Rifapentine (300/300mg) to pharmacy drugs</li>
+</ul>
+<h4 id="anc-config">ANC Config</h4>
+<p>The following attributes are now auto filled from previous visits in the ANC Register</p>
+<ul>
+<li>Blood group</li>
+<li>Last Normal Menstrual Period</li>
+<li>Estimated Date of Delivery</li>
+<li>HIV status known before first visit</li>
+<li>The "From Lesotho" field only appears in the first visit</li>
+<li>The "TT Previous Doses" field only appears in the first ANC visit</li>
+<li>TB lab test no. was added to the following TB tests in the follow up form</li>
+<li>Phenotypic tests</li>
+<li>Culture and DST</li>
+</ul>
+<h4 id="reports">Reports</h4>
+<h5 id="new-reports">New Reports</h5>
+<ul>
+<li>ART-002A | TxCurr Quarterly Test (List)</li>
+<li>MCH-001 | HIV Exposed Infants (HEI) - List : Excluded Under 5 information</li>
+<li>MCH-002 MCH-002 | HIV Exposed Infants (HEI) - Pivot : Excluded Under 5 information</li>
+<li>MCH-035 | ANC Data Quality Assessment || (Added the following columns to ANC Data Quality Assessment, Iron, Folate, Calcium, MUAC, Rhesus Factor, TD previous Doses, TD current Doses)</li>
+</ul>
+<h5 id="modifications">Modifications</h5>
+<h6 id="modified-to-align-with-art-0012-current-on-art-detailed">(Modified to align with ART-001/2 | Current on ART Detailed)</h6>
+<ul>
+<li>ART-044 | TX_CURR (List)</li>
+<li>
+<p>ART-043 | TX_CURR (Pivot)</p>
+</li>
+<li>
+<p>TB-002 | TB Notification (List)</p>
+</li>
+<li>TB-003 | TB Outcomes (List)</li>
+</ul>
+<h6 id="openmrs-report">Openmrs Report:</h6>
+<ul>
+<li>HTS Period Indicator Report | Exclude voided confirmatory results</li>
+<li>2020_ART_Current | Remove visitors from ART current</li>
+</ul>
+<h4 id="other">Other</h4>
+<ul>
+<li>Added concepts source DISA and LOINC </li>
+<li>Added corresponding new refence terms </li>
+<li>Created new viral load concepts and added mappings to the new and existing concepts.</li>
+</ul>
+<h3 id="release-notes-june-2023"><strong>Release Notes June 2023</strong></h3>
+<h4 id="_2"></h4>
+<h4 id="hivtc-visitor-config">HIVTC visitor config</h4>
+<ul>
+<li>Hides the "From(site)" if the client is not a visitor</li>
+</ul>
+<h4 id="anc-autocalculate-edd">ANC Autocalculate EDD</h4>
+<ul>
+<li>The system can calculate EDD in alignment with the new ANC form</li>
+</ul>
+<h4 id="tb_1">TB</h4>
+<ul>
+<li>TB-HIV Activities: Multi-select on Prevention of OIs</li>
+<li>Initial phase now has outcomes, they are no longer greyed out</li>
+</ul>
+<h4 id="hts-testing-eligibility">HTS Testing Eligibility</h4>
+<ul>
+<li>Adding multiple selection in HTS on concept Testing Eligibility, Last 12 Months</li>
+</ul>
+<h4 id="anc-latest-configs">ANC latest configs</h4>
+<ul>
+<li>Allow future dates to be entered for subsequent visit EDD</li>
+<li>Remove viral load template warning message in ANC program</li>
+<li>LOR: Obstetric History
+Parity, Alive and Miscarriages are hidden by 
+default and appear again, when Gravida &gt; 1</li>
+<li>LOR: History of Past Pregnancies
+Hidden by default, and appears only when Gravida &gt; 1</li>
+<li>
+<p>LOR: Gynaecological History
+Result of Pap smear: hidden by default and only appears when “Ever Had Pap 
+smear” is “YES”
+STI treated and Date STI Treated are hidden by default, but visible when 
+“History of STI” is “YES”
+Below Miscarriages: “When”, “Gestation Period” and “Curetage” are hidden by 
+default, but visible when miscarriages is "YES"</p>
+</li>
+<li>
+<p>LOR: Surgical History
+“Type of surgery” hidden by default and appears only when “Any Surgery” 
+is selected “YES”
+“Specify” hidden by default. Visible only when “Other” is clicked under 
+“Type of Surgery”</p>
+</li>
+<li>
+<p>ANC Register: Investigations and Immunizations
+Syphills Treatment Completed: Hidden by default, visible when “Reactive”
+ is clicked</p>
+</li>
+<li>
+<p>ANC Register: HIV Testing Services
+Initial Test During this Pregnancy: visible when HIV Status before 1st 
+Visit is not positive, otherwise hidden
+Initial Test During this Pregnancy: HIV Result: Visible only when HIV 
+1Test Done? Is “YES”
+Initial Test During this Pregnancy: HIV Result Received: visible only 
+HIV Test Result are Positive or Negative, otherwise hidden
+Subsequent HIV Test Results: hidden by default. Visible when Known HIV 
+Status before 1st visit is not positive and initial test results during 
+this pregnancy is not positive
+Male Partner Involvement: HIV Status hidden by default, visible when 
+“YES” is clicked</p>
+</li>
+</ul>
+<h4 id="reports_1">Reports</h4>
+<h5 id="modified">Modified</h5>
+<h6 id="art-reports-modified">Art Reports Modified.</h6>
+<ul>
+<li>ART-001 | Current on ART Detailed (List)  - To exclude visotrs</li>
+<li>ART-002 | Current on ART Detailed (Pivot)  - To exclude visotrs</li>
+<li>ART-001 | Current on ART Detailed (List) - Corrected to exclude dead patients from the initiated section of the report</li>
+<li>ART-002 | Current on ART Detailed (Pivot) - Aligned with the list version</li>
+<li>ART-017 | Registered ART Visits with ART Consultation (List) : Includes Art Clients who had other visits other than Drug pickup and viral load visit</li>
+<li>ART-018 | Registered ART Visits with ART Consultation (Pivot) : Includes Art Clients who had other visits other than Drug pickup and viral load visit</li>
+<li>ART-043 | TX_CURR (Pivot) - Corrected to exclude dead patients from the initiated section of the report</li>
+<li>ART-044 | TX_CURR (List) - Aligned with the list version</li>
+<li>ART-061 | Pre-ART - Revise the report to pull clients retested positive and not linked to care</li>
+<li>ART-067 | PEADS Aging Out Analysis (Client Outcomes) - Updated to track  Q4 Sept 2022 txcurr</li>
+<li>ART-068 | PEADS Aging Out Analysis (Client Appointments) - Updated to track  Q4 Sept 2022 txcurr</li>
+</ul>
+<h6 id="hts-reports-modified">HTS Reports Modified.</h6>
+<ul>
+<li>HTS-006 | Self Test Clients(List) : modified to allow the report accomodate all periods</li>
+<li>HTS-007 | Self Test Clients(Pivot) : A new report reports.json : addition of a new report</li>
+<li>Reports.json : addition of a new report</li>
+</ul>
+<h6 id="mch-reports-modified">MCH Reports Modified.</h6>
+<ul>
+<li>MCH-003 | AnteNatal Care (ANC) (List)   - This report has been optimized</li>
+<li>MCH-004 | AnteNatal Care (ANC) (Pivot)  - Corrected number of first ANC Visits to be equal to total trimester</li>
+<li>MCH-011 | Family Planning - List</li>
+<li>MCH-012 | Family Planning - Pivot</li>
+<li>MCH-029 | Registered FP Visits with FP Consultation (List)</li>
+</ul>
+<h6 id="tb-reports-modified">TB Reports Modified.</h6>
+<ul>
+<li>TB-001 | TB Case Detection (List) : Included "Referred by(CBO/CHW)" and "Died before treatment" indicators</li>
+<li>TB-002 | TB Notification (List) : Included "Prophylaxis provided" indicator</li>
+<li>TB-003 | TB Outcomes (List) : Added two treatment outcomes: Not Evaluated and Moved to Second line</li>
+<li>TB-017 | TB Prevention Therapy (Pivot) : Revised TPT pivot report</li>
+<li>TB-019 | TB Intakes (List) - Corrected to include intakes captured within a year of the report start date only</li>
+<li>TB-020 | TB Intakes (Pivot)- Aligned with the list version</li>
+</ul>
+<h3 id="release-notes-may-2023"><strong>Release Notes May 2023</strong></h3>
 <h4 id="clinical-module">Clinical Module</h4>
+<p>----------------------------------------------------------- <strong>Tuberculosis - Intake</strong> -----------------------------------------------------------</p>
+<h6 id="the-following-were-added">The following were added:</h6>
+<ul>
+<li>Linkage: Added country and facility: for out of the country Transfer In</li>
+<li>History of previous treatment: Added "Other" Option and "Specify"</li>
+<li>Social Behaviour Section</li>
+<li>Laboratory Tests: Added Culture and DST, added Test Lab no and date test was done on each Test type</li>
+<li>Medical History and Other Comorbidites</li>
+<li>Intensive care</li>
+</ul>
+<p>----------------------------------------------------------- <strong>Tuberculosis - Followup</strong> -----------------------------------------------------------</p>
+<h6 id="the-following-were-added_1">The following were added:</h6>
+<ul>
+<li>
+<p>Laboratory Tests:</p>
+<ul>
+<li>Added Culture and DST</li>
+<li>Added Test Lab no. to Phenotypic tests</li>
+<li>Added date test was done on each Test type</li>
+</ul>
+</li>
+<li>
+<p>Contact Tracing</p>
+</li>
+<li>The option to allow users to multiple contact info for traced TB contacts</li>
+</ul>
+<p>----------------------------------------------------------------------- <strong>Under5</strong> -----------------------------------------------------------------------</p>
+<ul>
+<li>Added feature to auto fill Under5 and ANC Number from first Under5 register consultation in subsequent visits</li>
+</ul>
+<h4 id="reports_2">Reports</h4>
+<h5 id="modified_1">Modified</h5>
+<ul>
+<li>ART-003 | Missed Appointments Status Report (List)   Modified to only consider transfers out in the latest follow up form</li>
+<li>ART-045 | TX_CURR MMD (List) MMD missed removed</li>
+<li>ART-046 | TX_CURR MMD (Pivot) MMD missed removed</li>
+<li>TB-020 | TB Intakes (Pivot)- Aligned with the list version</li>
+<li>TB-019 | TB Intakes (List) - Corrected to include intakes captured within a year of the report start date only</li>
+<li>ART-001 | Current on ART Detailed (List) - Corrected to exclude dead patients from the initiated section of the report</li>
+<li>ART-002 | Current on ART Detailed (Pivot) - Aligned with the list version</li>
+<li>ART-043 | TX_CURR (Pivot) - Aligned with the list version</li>
+<li>ART-044 | TX_CURR (List) - Corrected to exclude dead patients from the initiated section of the report</li>
+</ul>
+<h5 id="newly-added">Newly added</h5>
+<ul>
+<li>ART-080 | Visitors Report (List)</li>
+<li>ART-081 | Visitors Report (Pivot) </li>
+</ul>
+<h3 id="release-notes-april-2023"><strong>Release Notes April 2023</strong></h3>
+<h4 id="clinical-module_1">Clinical Module</h4>
 <p>---------------------------------------------------- <strong>HIV Treatment and Care - Follow Up</strong> -------------------------------------------</p>
 <ul>
 <li>HIV Treatment and Care module<ul>
@@ -1633,7 +1852,7 @@
 <p><img alt="ANC Register - 1st visit" src="../../pics/ANC_register_1st.png" /></p>
 <p><img alt="ANC Register - 2nd visit" src="../../pics/ANC_register_2nd.png" /></p>
 <ul>
-<li>ANC Program revised to mimic the newly released ANC REgister<ul>
+<li>ANC Program revised to mimic the newly released ANC Register<ul>
 <li>Revised the whole ANC Register<ul>
 <li>Calcium</li>
 <li>Nutritional Assesment</li>
@@ -1649,13 +1868,110 @@
 </ul>
 </li>
 </ul>
-<h4 id="reports">Reports</h4>
+<p>------------------------------------------------------------------------- <strong>HIV Testing and Counseling</strong> ----------------------------------------------------------------</p>
 <ul>
+<li>The 'kit collected for' field is now compulsory when secondary distribution mode is selected</li>
+</ul>
+<p>--------------------------------------------------------------------------- <strong>Family Planning Register</strong> ------------------------------------------------------------------</p>
+<ul>
+<li>Follow up date added</li>
+<li>Multiselect on family counselling services provided enabled</li>
+<li>Entering future dates on IUCD/Implant check-up date enabled</li>
+</ul>
+<h4 id="reports_3">Reports</h4>
+<h5 id="modified_2">Modified</h5>
+<ul>
+<li>TB-026 | TB Data Quality Assessment Tool - modified to:</li>
+<li>Include TB regimen</li>
+<li>Treatment outcome regardless of the report</li>
+<li>
+<p>Type of test performed</p>
+</li>
+<li>
+<p>ART-077 | Weekly PPR (List) : corrected to show weekly defaulters and NCLIs that came after 91 days</p>
+</li>
+<li>
+<p>ART-078 | Weekly PPR (Pivot): corrected to show weekly defaulters and NCLIs that came after 91 days</p>
+</li>
+<li>
+<p>MCH-007 | Child Health (Under5) - List - Added all the multi selected immunization</p>
+</li>
+<li>
+<p>ART-022 | Data Quality Assessment Tool - Viral load column to provide explicit values for VL &gt;20</p>
+</li>
+<li>
+<p>HTS Final Status Report - solved duplication caused by editing the form.</p>
+</li>
+<li>
+<p>TB-022 | Registered TB Visits with TB Consultation (List) - Modified to be more accurate</p>
+</li>
+<li>
+<p>TB-023 | Registered TB Visits with TB Consultation (Pivot) - Modified to be more accurate</p>
+</li>
+<li>
+<p>HTS-002 | HTS Final HIV Status PITC (Pivot) : Revised to exclude clients with Tested in ANC Form</p>
+</li>
+<li>
+<p>HTS-004 | HTS Final HIV Status CITC (Pivot) : Revised to exclude clients with Tested in ANC Form</p>
+</li>
+<li>
+<p>TB-026 | TB Data Quality Assessment Tool - Select client initiated during period and date transferred in for SA clients</p>
+</li>
+<li>
+<p>Revised Rapid HTS reports to eliminate duplication of Clients who had ANC Form consultaions (OpenMRS reports)</p>
+</li>
+</ul>
+<h5 id="newly-added_1">Newly added</h5>
+<ul>
+<li>Tb_Notification reports( Block 1,Block 2,Block 3,Block 4) (OpenMRS reports)</li>
+<li>
+<p>TB Outcome reports (Block 1 and Block 2) (OpenMRS reports)</p>
+</li>
+<li>
+<p>MCH-001 | HIV Exposed Infants (HEI) - List</p>
+</li>
+<li>MCH-002 | HIV Exposed Infants (HEI) - Pivot</li>
+<li>MCH-003 | AnteNatal Care (ANC) - List</li>
+<li>MCH-004 | AnteNatal Care (ANC) - Pivot</li>
+<li>MCH-005 | Post Natal Care (PNC) - List</li>
+<li>MCH-006 | Post Natal Care (PNC) - Pivot</li>
+<li>MCH-007 | Child Health (Under5) - List</li>
+<li>MCH-009 | Labour and Delivery - List</li>
+<li>MCH-010 | Labour and Delivery - Pivot</li>
+<li>MCH-011 | Family Planning - List</li>
+<li>MCH-012 | Family Planning - Pivot</li>
+<li>MCH-013 | Nutrition - List</li>
+<li>MCH-014 | Nutrition - Pivot</li>
+<li>MCH-015 | PMTCT STAT DINOMINATOR (List)</li>
+<li>MCH-016 | PMTCT STAT DINOMINATOR (Pivot)</li>
+<li>MCH-017 | PMTCT STAT (List)</li>
+<li>MCH-018 | PMTCT STAT (Pivot)</li>
+<li>MCH-019 | PMTCT EID (List)</li>
+<li>MCH-020 | PMTCT EID (PIVOT)</li>
+<li>MCH-022 | PMTCT HEI POS (Pivot)</li>
 <li>-</li>
 </ul>
 <hr />
-<h3 id="release-notes-february-2022"><strong>Release Notes February 2022</strong></h3>
-<h4 id="reports_1">Reports</h4>
+<h3 id="release-notes-march-2023"><strong>Release Notes March 2023</strong></h3>
+<h4 id="reports_4">Reports</h4>
+<h5 id="modified_3">Modified</h5>
+<ul>
+<li>ART-022 | Data Quality Assessment Tool - Viral load column to provide explicit values for VL &gt;20</li>
+<li>TB-018 | TB Intakes (List) - Changed the variable #enddate# to #endDate#</li>
+<li>MCH-014 | PNC SEEN (List) - Added First_PNC_Attendance, Place_of_Delivery, FP_Counselling, FP_Method, Syphilis_Screening, Cancer_Screening, Cancer_Assessment_Method,HIV_Testing_Result, Breastfeeding, MUAC_less_than_23cm</li>
+<li>MCH-017 | Child Health Attendance - Under5 (List) - Added Months, Base_Dose, 1st_Dose, 2nd_Dose, 3rd_Dose, Fully_Immunized, Measles_1st_Dose, Measles_2nd_Dose, Dt_1st_Dose</li>
+<li>HTS-001 | HTS Final HIV Status (List) - solved duplication caused by editing the form.</li>
+<li>ART-003 | Missed Appointments Status Report (List) - location re-added</li>
+<li>ART-003 | Missed Appointments Status Report (List) - Order clients by their appointment status, appointment date</li>
+</ul>
+<h4 id="clinical-module_2">Clinical Module</h4>
+<ul>
+<li>Self test distribution mode is now compulsory  </li>
+<li>Added version date on bahmni login page  </li>
+</ul>
+<hr />
+<h3 id="release-notes-february-2023"><strong>Release Notes February 2023</strong></h3>
+<h4 id="reports_5">Reports</h4>
 <ul>
 <li>TB-025 | TB Data Quality Assessment Tool - Added prevention of IOs with the new concept</li>
 <li>TB-026 | TB Outcome (List) - new report. The previous report was not a list but a pivot.</li>
@@ -1664,7 +1980,7 @@
 <li>ART-032 | TX_NEW (PIVOT) : include died in the same period</li>
 <li>ART-078 | PrEP NEW (List) - new report</li>
 </ul>
-<h4 id="clinical-module_1">Clinical Module</h4>
+<h4 id="clinical-module_3">Clinical Module</h4>
 <ul>
 <li>HIV Management Made Multi-Select On TB intake Form</li>
 <li>Labour and Delivery register: allow add more and conditions</li>
@@ -1675,7 +1991,7 @@
 </ul>
 <hr />
 <h3 id="release-notes-january-2023"><strong>Release Notes January 2023</strong></h3>
-<h4 id="reports_2">Reports</h4>
+<h4 id="reports_6">Reports</h4>
 <ul>
 <li>Added TB-025 | TB Data Quality Assessment Tool to reports json file</li>
 <li>MCH-014 | PNC SEEN (List) - New Report </li>
@@ -1707,7 +2023,7 @@
 <li>ART-043 | TX_CURR (List)</li>
 <li>ART-042 | TX_CURR (Pivot)</li>
 </ul>
-<h4 id="clinical-module_2">Clinical Module</h4>
+<h4 id="clinical-module_4">Clinical Module</h4>
 <ul>
 <li>Correct transferred out clients were picked under missed.</li>
 </ul>
@@ -1715,7 +2031,7 @@
 <h3 id="release-notes-december-2022"><strong>Release Notes December 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_3">Reports</h5>
+<h5 id="reports_7">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni">Bahmni</h6>
@@ -1739,7 +2055,7 @@
 <h3 id="release-notes-november-2022"><strong>Release Notes November 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_4">Reports</h5>
+<h5 id="reports_8">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni_1">Bahmni</h6>
@@ -1769,7 +2085,7 @@
 <h3 id="release-notes-october-2022"><strong>Release Notes October 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_5">Reports</h5>
+<h5 id="reports_9">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni_2">Bahmni</h6>
@@ -1801,7 +2117,7 @@
 <h3 id="release-notes-september-2022"><strong>Release Notes September 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_6">Reports</h5>
+<h5 id="reports_10">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni_3">Bahmni</h6>
@@ -1837,7 +2153,7 @@
 </ul>
 </li>
 <li>
-<h5 id="clinical-module_3">Clinical Module</h5>
+<h5 id="clinical-module_5">Clinical Module</h5>
 <ul>
 <li>New Prep Follow-Up Form</li>
 <li>New Prep Intake Form</li>
@@ -1870,7 +2186,7 @@
 <h3 id="release-notes-august-2022"><strong>Release Notes August 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_7">Reports</h5>
+<h5 id="reports_11">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni_4">Bahmni</h6>
@@ -1886,7 +2202,7 @@
 </ul>
 </li>
 <li>
-<h5 id="clinical-module_4">Clinical Module</h5>
+<h5 id="clinical-module_6">Clinical Module</h5>
 <ul>
 <li>WHO staging made to disappear when T-staging is selected</li>
 <li>Hid HIVST Results for primary when Secondary is Selected</li>
@@ -1898,7 +2214,7 @@
 <h3 id="release-notes-july-2022"><strong>Release Notes July 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_8">Reports</h5>
+<h5 id="reports_12">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni_5">Bahmni</h6>
@@ -1931,7 +2247,7 @@
 </ul>
 </li>
 <li>
-<h5 id="clinical-module_5">Clinical Module</h5>
+<h5 id="clinical-module_7">Clinical Module</h5>
 <ul>
 <li>Fixed EDD Auto-Calculation</li>
 <li>Hid PITC Results on CACX Form if The test has not been offered</li>
@@ -1957,7 +2273,7 @@
 </ul>
 </li>
 <li>
-<h5 id="reports_9">Reports</h5>
+<h5 id="reports_13">Reports</h5>
 <ul>
 <li>Ported all Bahmni 0.90 reports to Bahmni 0.92</li>
 <li>Developed Informed Push Tool reports</li>
@@ -1980,7 +2296,7 @@
 </ul>
 </li>
 <li>
-<h5 id="clinical-module_6">Clinical Module</h5>
+<h5 id="clinical-module_8">Clinical Module</h5>
 <ul>
 <li>Refactoring Bahmni App to align with 0.90</li>
 <li>Improving the flow of order automation from observation to medication tab</li>

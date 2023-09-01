@@ -21,7 +21,7 @@
         <link rel="next" href="../TB_Program/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -29,10 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -107,6 +107,8 @@
         </div>
       </div>
     </div>
+    
+      
     
     
     
@@ -790,6 +792,20 @@
     <li class="md-nav__item">
       <a href="../TB_Program/" class="md-nav__link">
         TB Program
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ART_Program/" class="md-nav__link">
+        ART Program
       </a>
     </li>
   
@@ -1620,6 +1636,49 @@
 <li>Please report issues here: <a href="https://github.com/eRegister/bahmni_docker/issues">https://github.com/eRegister/bahmni_docker/issues</a></li>
 </ul>
 </div>
+<h3 id="release-notes-august-2023"><strong>Release Notes August 2023</strong></h3>
+<h4 id="anc">ANC</h4>
+<h5 id="anc-form-fixes-and-modifications">ANC Form fixes and modifications</h5>
+<ul>
+<li>Blood pressure is moved to below EDD</li>
+<li>Covid 19 status has been added to the form</li>
+<li>High risk pregnancy options were changed to match the current ANC register</li>
+<li>Complications during pregnancy were changed to match current ANC register</li>
+<li>Parity and Gravida are now auto-filled from the previous form in the ANC form</li>
+</ul>
+<h4 id="mdr-tb-in-registration">MDR-TB in registration</h4>
+<h5 id="added-mdr-tb-demographics-and-household-contact">Added MDR-TB-DEMOGRAPHICS and HOUSEHOLD CONTACT</h5>
+<h5 id="direction-for-mdr-tb-section">Direction for MDR-TB section</h5>
+<h4 id="reports">Reports</h4>
+<h5 id="new-reports">New Reports</h5>
+<ul>
+<li>TB-002 | TB Case Detection (Pivot)</li>
+<li>TB-027 | MDR TB Clients - A new MDR report</li>
+<li>MCH-023 | PMTCT FO (List) : New report</li>
+<li>MCH-024 | PMTCT FO (Pivot) : New report</li>
+<li>TB-028 | MDR TB Clients (Pivot) : New report</li>
+<li>Cervical Cancer Screening (List) : New report to include all clients screened</li>
+</ul>
+<h5 id="modifications">Modifications</h5>
+<ul>
+<li>ART-019 | Registered ART Clients with Intakes (List) - Modified to exclude visitors</li>
+<li>ART-020 | Registered ART Clients with Intakes (Pivot) - Modified to exclude visitors</li>
+<li>ART-021 | ART Client Without Intakes (List) - Updated to exclude visitors</li>
+<li>TB-001 | TB Case Detection (List) : Modified to include all tb screened clients</li>
+<li>MCH-017 | PMTCT STAT (List) : Modified to pull all tested ANC first visits</li>
+<li>MCH-018 | PMTCT STAT (Pivot) : Modified to pull all tested ANC first visits</li>
+<li>MCH-003 | AnteNatal Care (ANC) - List : Modified to remove duplication of clients by restricting the report to only pick the latest MUAC</li>
+</ul>
+<h5 id="cag">CAG</h5>
+<ul>
+<li>Creating Cag Module Base Code : (This is the base code from which cag module development begins to take effect)</li>
+</ul>
+<h5 id="other">Other</h5>
+<ul>
+<li>Renamed DISA parameter codes and added new LOINC code</li>
+<li>Remove HPV results error in cervical cancer screening form</li>
+<li>Reports.json : Added Cervical Cancer Screening (List)</li>
+</ul>
 <h3 id="release-notes-july-2023"><strong>Release Notes July 2023</strong></h3>
 <h4 id="tb">TB</h4>
 <h5 id="-changes-made-in-the-tb-intake-and-tb-followup-forms">- Changes made in the TB intake and TB followup forms</h5>
@@ -1655,15 +1714,15 @@
 <li>Phenotypic tests</li>
 <li>Culture and DST</li>
 </ul>
-<h4 id="reports">Reports</h4>
-<h5 id="new-reports">New Reports</h5>
+<h4 id="reports_1">Reports</h4>
+<h5 id="new-reports_1">New Reports</h5>
 <ul>
 <li>ART-002A | TxCurr Quarterly Test (List)</li>
 <li>MCH-001 | HIV Exposed Infants (HEI) - List : Excluded Under 5 information</li>
 <li>MCH-002 MCH-002 | HIV Exposed Infants (HEI) - Pivot : Excluded Under 5 information</li>
 <li>MCH-035 | ANC Data Quality Assessment || (Added the following columns to ANC Data Quality Assessment, Iron, Folate, Calcium, MUAC, Rhesus Factor, TD previous Doses, TD current Doses)</li>
 </ul>
-<h5 id="modifications">Modifications</h5>
+<h5 id="modifications_1">Modifications</h5>
 <h6 id="modified-to-align-with-art-0012-current-on-art-detailed">(Modified to align with ART-001/2 | Current on ART Detailed)</h6>
 <ul>
 <li>ART-044 | TX_CURR (List)</li>
@@ -1680,7 +1739,7 @@
 <li>HTS Period Indicator Report | Exclude voided confirmatory results</li>
 <li>2020_ART_Current | Remove visitors from ART current</li>
 </ul>
-<h4 id="other">Other</h4>
+<h4 id="other_1">Other</h4>
 <ul>
 <li>Added concepts source DISA and LOINC </li>
 <li>Added corresponding new refence terms </li>
@@ -1750,7 +1809,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 “YES” is clicked</p>
 </li>
 </ul>
-<h4 id="reports_1">Reports</h4>
+<h4 id="reports_2">Reports</h4>
 <h5 id="modified">Modified</h5>
 <h6 id="art-reports-modified">Art Reports Modified.</h6>
 <ul>
@@ -1821,7 +1880,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 <ul>
 <li>Added feature to auto fill Under5 and ANC Number from first Under5 register consultation in subsequent visits</li>
 </ul>
-<h4 id="reports_2">Reports</h4>
+<h4 id="reports_3">Reports</h4>
 <h5 id="modified_1">Modified</h5>
 <ul>
 <li>ART-003 | Missed Appointments Status Report (List)   Modified to only consider transfers out in the latest follow up form</li>
@@ -1878,7 +1937,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 <li>Multiselect on family counselling services provided enabled</li>
 <li>Entering future dates on IUCD/Implant check-up date enabled</li>
 </ul>
-<h4 id="reports_3">Reports</h4>
+<h4 id="reports_4">Reports</h4>
 <h5 id="modified_2">Modified</h5>
 <ul>
 <li>TB-026 | TB Data Quality Assessment Tool - modified to:</li>
@@ -1953,7 +2012,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 </ul>
 <hr />
 <h3 id="release-notes-march-2023"><strong>Release Notes March 2023</strong></h3>
-<h4 id="reports_4">Reports</h4>
+<h4 id="reports_5">Reports</h4>
 <h5 id="modified_3">Modified</h5>
 <ul>
 <li>ART-022 | Data Quality Assessment Tool - Viral load column to provide explicit values for VL &gt;20</li>
@@ -1971,7 +2030,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 </ul>
 <hr />
 <h3 id="release-notes-february-2023"><strong>Release Notes February 2023</strong></h3>
-<h4 id="reports_5">Reports</h4>
+<h4 id="reports_6">Reports</h4>
 <ul>
 <li>TB-025 | TB Data Quality Assessment Tool - Added prevention of IOs with the new concept</li>
 <li>TB-026 | TB Outcome (List) - new report. The previous report was not a list but a pivot.</li>
@@ -1991,7 +2050,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 </ul>
 <hr />
 <h3 id="release-notes-january-2023"><strong>Release Notes January 2023</strong></h3>
-<h4 id="reports_6">Reports</h4>
+<h4 id="reports_7">Reports</h4>
 <ul>
 <li>Added TB-025 | TB Data Quality Assessment Tool to reports json file</li>
 <li>MCH-014 | PNC SEEN (List) - New Report </li>
@@ -2031,7 +2090,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 <h3 id="release-notes-december-2022"><strong>Release Notes December 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_7">Reports</h5>
+<h5 id="reports_8">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni">Bahmni</h6>
@@ -2055,7 +2114,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 <h3 id="release-notes-november-2022"><strong>Release Notes November 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_8">Reports</h5>
+<h5 id="reports_9">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni_1">Bahmni</h6>
@@ -2085,7 +2144,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 <h3 id="release-notes-october-2022"><strong>Release Notes October 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_9">Reports</h5>
+<h5 id="reports_10">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni_2">Bahmni</h6>
@@ -2117,7 +2176,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 <h3 id="release-notes-september-2022"><strong>Release Notes September 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_10">Reports</h5>
+<h5 id="reports_11">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni_3">Bahmni</h6>
@@ -2186,7 +2245,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 <h3 id="release-notes-august-2022"><strong>Release Notes August 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_11">Reports</h5>
+<h5 id="reports_12">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni_4">Bahmni</h6>
@@ -2214,7 +2273,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 <h3 id="release-notes-july-2022"><strong>Release Notes July 2022</strong></h3>
 <ul>
 <li>
-<h5 id="reports_12">Reports</h5>
+<h5 id="reports_13">Reports</h5>
 <ul>
 <li>
 <h6 id="bahmni_5">Bahmni</h6>
@@ -2273,7 +2332,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
 </ul>
 </li>
 <li>
-<h5 id="reports_13">Reports</h5>
+<h5 id="reports_14">Reports</h5>
 <ul>
 <li>Ported all Bahmni 0.90 reports to Bahmni 0.92</li>
 <li>Developed Informed Push Tool reports</li>
@@ -2318,7 +2377,7 @@ Male Partner Involvement: HIV Status hidden by default, visible when
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 21, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 1, 2023</span>
       
     
   </small>
@@ -2379,10 +2438,10 @@ Male Partner Involvement: HIV Status hidden by default, visible when
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>

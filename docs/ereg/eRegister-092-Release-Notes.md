@@ -7,6 +7,22 @@
     * this beta version is going to be deployed at selected pilot facilities. 
     * Please report issues here: [https://github.com/eRegister/bahmni_docker/issues](https://github.com/eRegister/bahmni_docker/issues)
 
+##### Modifications
+### **Release Notes March 2024**
+#### Reports
+##### New Reports
+
+##### Modifications
+###### Added new mappings for eRegister weekly report starting saturday:
+- eRegister Monitoring Weekly Saturday.1710254040817.mapping.json
+- eRegister_Intakes_Report_Mapping.1710837942276.mapping.json
+#### Updates
+##### Added genex results on patient dashboard
+- Renamed the comments concept to DISA, Result Comments so that it can be used for VL and TB results comments
+Added the following TB GeneXpert results concepts to the labOrdersControl
+
+- - DISA, GeneXpert Result, MTB Result
+- - DISA, GeneXpert Result, Rifampicin
 ### **Release Notes Feberuary 2024**
 #### New
 ##### New POC concept 

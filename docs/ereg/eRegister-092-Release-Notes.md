@@ -7,7 +7,26 @@
     * this beta version is going to be deployed at selected pilot facilities. 
     * Please report issues here: [https://github.com/eRegister/bahmni_docker/issues](https://github.com/eRegister/bahmni_docker/issues)
 
+### **Release Notes May 2024**
+#### Reports
+##### New Reports
+- ART Clients with Viral Load Test Results (List)
+- ART Clients with Viral Load Test Results (Pivot)
+- Appropriate second VL test (List)
+- ART Adherence Proxy (List)
+- LAB-004 | HIV POC (List)
+- LAB-005 | HIV POC (Pivot) 
 ##### Modifications
+- HTS-001 | HTS Final HIV Status (List) : Modified to include indeterminate status
+- HTS-002 | HTS Final HIV Status PITC (Pivot) : Modified to include indeterminate status
+- HTS-004 | HTS Final HIV Status CITC (Pivot : Modified to include indeterminate status
+- LAB-001 | Lab_Report (List) : Added the Turn Around Time column and corrected the results. Some were matched against the incorrect Lab order numbers and this has been corrected.
+#### Updates
+- Added remaining months in TPT register to complete it
+- Revised PrEP intake form
+- Revised PrEP followup form
+- Added HPV test option to cervical cancer screening test types
+- Complete TPT form
 ### **Release Notes March 2024**
 #### Reports
 ##### New Reports

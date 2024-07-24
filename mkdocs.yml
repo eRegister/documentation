@@ -32,6 +32,9 @@ nav:
                             - "dhis2/usermanual.md"
                   - "DataSets":
                             - "dhis2/intro.md"
+                            - "Integrated Facility Reporting Form":
+                                      - "dhis2/family-planning.md"
+                                      - "dhis2/nutrition.md"
                             - "dhis2/hts.md"
                             - "dhis2/tb.md"
                             - "dhis2/tb-indicators.md"

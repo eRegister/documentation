@@ -50,6 +50,9 @@ nav:
                             - "ereg/eRegister-092-Release-Notes.md"
                             - "ereg/LIS.md"
                             - "ereg/FHIR_Modules_Error.md"
+                  - "Reports":
+                            - "reports/reports.md"
+                            - "reports/dhisreporting.md"
                   - "User Manual":
                             - "ereg/TB_Program.md"
                             - "ereg/ART_Program.md"

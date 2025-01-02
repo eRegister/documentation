@@ -1,11 +1,9 @@
-### eRegister Release Notes
 
-!!! info
-    * eRegister is based on => [0.92](https://bahmni.atlassian.net/wiki/spaces/BAH/pages/20185103/Release+Notes)
+### **02 Jan 2025**
 
-!!! warning
-    * this beta version is going to be deployed at selected pilot facilities. 
-    * Please report issues here: [https://github.com/eRegister/bahmni_docker/issues](https://github.com/eRegister/bahmni_docker/issues)
+#### Reports
+- HTS-001 and HTS-002 corrected to pick all HTS clients from all service points
+
 ### **Release Notes October 2023**
 #### Updates
 - Update cervical_scrn_list.sql | The was duplication in the list where if a client have received both PNC and cervical scrn services would appears twice in the cervical cancer screening list.
